@@ -1,37 +1,29 @@
 import "./App.css";
+import Button from "./components/button";
+import Screen from "./components/screen";
 
 const App = () => {
 	return (
 		<div className="main-container">
 			<div className="calculator-container">
-				<div className="screen"></div>
+        <Screen />
 				<div className="main-btn-container">
-					<div className="function-btns">
-						<h3>y=</h3>
-						<h3>window</h3>
-						<h3>zoom</h3>
-						<h3>trace</h3>
-						<h3>graph</h3>
-					</div>
-					<div className="section-2-btns">
-						<div className="alt-btns-container">
-							<div className="btn alt-btns">
-								<h3>2nd</h3>
-								<h3>mode</h3>
-								<h3>del</h3>
-							</div>
-							<div className="btn alt-btns">
-								<h3>alpha</h3>
-								<h3>X,T,θ,n</h3>
-								<h3>stat</h3>
-							</div>
-						</div>
-						<div>hello there{/* arrows */}</div>
-					</div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<Button id="7" />
+					<Button id="8" />
+					<Button id="9" />
+					<Button id="÷" />
+					<Button id="4" />
+					<Button id="5" />
+					<Button id="6" />
+					<Button id="×" />
+					<Button id="1" />
+					<Button id="2" />
+					<Button id="3" />
+					<Button id="-" />
+					<Button id="0" />
+					<Button id="." />
+					<Button id="(-)" />
+					<Button id="enter" />
 				</div>
 			</div>
 		</div>

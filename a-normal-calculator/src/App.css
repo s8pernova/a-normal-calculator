@@ -1,6 +1,7 @@
 :root {
 	font-family: Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times,
 		"Times New Roman", serif;
+	margin: 0;
 }
 
 .main-container {
@@ -22,7 +23,7 @@
 	margin-top: auto;
 	margin-bottom: auto;
 	position: relative;
-	background-image: url("https://m.media-amazon.com/images/I/71LgDN3WrpL._AC_UF894,1000_QL80_.jpg");
+	/* background-image: url("https://m.media-amazon.com/images/I/71LgDN3WrpL._AC_UF894,1000_QL80_.jpg"); */
 	background-size: cover;
 	background-position: center;
 	border: 2px dashed red;
@@ -39,73 +40,38 @@
 }
 
 .main-btn-container {
+	/* border: 2px solid red; */
 	bottom: 4.8%;
 	position: absolute;
-	border: 2px dashed red;
-	width: 77.5%;
+	/* width: 77.5%; */
 	height: 57.1%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.btn h3 {
-  margin: 0;
-	background-color: black;
-	color: white;
-  width: 55px;
-  height: 40px;
-}
-
-/* function buttons */
-
-.function-btns {
-	position: absolute;
-	top: 0;
-	display: flex;
-	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 	justify-content: space-between;
-	/* align-items: center; */
+	align-items: center;
+	gap: 30px;
+  margin: 0;
 }
 
-.function-btns h3 {
-	/* opacity: 0.5; */
-	border-radius: 6px;
-	margin: 0;
-	background-color: rgb(255, 255, 255);
-	font-size: 10px;
-	height: 30px;
-	width: 55px;
+/* .btns-container {
+  border: 2px solid red;
+  position: absolute;
+  height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+} */
+
+.btn {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-}
-
-.function-btns h3:first-child {
-	border-radius: 13px 0 0 13px;
-}
-
-.function-btns h3:last-child {
-	border-radius: 6px 13px 13px 6px;
-}
-
-/* section 2 buttons */
-
-.section-2-btns {
-	display: flex;
-	border: 2px dashed red;
-}
-
-.alt-btns-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.alt-btns {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	background-color: rgb(112, 112, 112);
+	color: white;
+	width: 70px;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+  font-size: 2em;
 }
